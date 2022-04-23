@@ -1,6 +1,24 @@
 @font-face {
-    font-family: 'Euclid Square';
-    src: '/fonts/EuclidSquare-Regular/EuclidSquare-Regular.ttf';
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: 'Euclid Square Regular';
+  src: url('/fonts/EuclidSquare-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+} 
+@font-face {
+  font-family: 'Euclid Square Light';
+  src: url('/fonts/EuclidSquare-Light.ttf');
+  font-weight: 200;
+  font-style: normal;
+} 
+@font-face {
+  font-family: 'Euclid Square SemiBold';
+  src: url('/fonts/EuclidSquare-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+} 
+@font-face {
+  font-family: 'Euclid Square Bold';
+  src: url('/fonts/EuclidSquare-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+} 
