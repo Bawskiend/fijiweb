@@ -176,6 +176,9 @@ position: absolute;
 left: 200px;
 top: 370px;
 }
+.callback-mobile{
+    display: none;
+}
 .title-block__gif2{
     position: absolute;
     left: -170px;
@@ -309,6 +312,9 @@ margin-bottom: 50px;
     font-family: 'Euclid Square Regular';
     font-size: 30px;
 }
+.menu-mobile{
+    display: none;
+}
 .swiper{
     max-width: 100%;
 }
@@ -436,6 +442,12 @@ margin-bottom: 50px;
 
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .menu-mobile{
+        display: block;
+    }
+    .callback-mobile{
+        display: block;
+    }
     .title-block__image{   
         width: 550px;
         object-fit: cover;
@@ -479,6 +491,12 @@ margin-bottom: 50px;
 }
 
 @media (max-width: 767px) {
+    .menu-mobile{
+        display: block;
+    }
+    .callback-mobile{
+        display: block;
+    }
     .title-block__image{   
         width: 450px;
         object-fit: cover;
