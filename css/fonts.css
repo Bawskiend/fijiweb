@@ -22,3 +22,9 @@
   font-weight: 700;
   font-style: normal;
 } 
+@font-face {
+  font-family: 'Euclid Square Medium';
+  src: url('/fonts/EuclidSquare-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+} 

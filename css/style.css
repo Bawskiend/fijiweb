@@ -28,7 +28,8 @@ body{
 }
 .socials{
     display: flex;
-    border-left: 2px solid #6091F8;
+    border-left: 2px solid rgba(96, 145, 248, 0.5);
+    ;
     padding-left: 14px;
 }
 .socials__list{
@@ -184,7 +185,7 @@ body{
     cursor: pointer;
 }
 .subtitle-block{
-    margin-bottom: 95px;
+    margin-bottom: 15px;
 }
 .subtitle{
     margin-bottom: 40px;
@@ -208,26 +209,74 @@ body{
     margin-bottom: 10px;
 }
 .example-block{
-
+    margin-top: 80px;
+    border-bottom: 1px solid rgba(96, 145, 248, 0.5);
+}
+.example-block:last-child{
+    border-bottom: none;
 }
 .example-block__title{
+    font-family: 'Euclid Square SemiBold';
 
+    font-size: 32px;
+    margin-bottom: 50px;
+    text-align: left;
+    color: white;
 }
 .example-block__image{
-
+    margin-bottom: 50px;
+}
+.example-block__watch-review{
+    font-family: 'Euclid Square Bold';
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto 80px auto;
+    max-width: 405px;
+    height: 90px;
+    border-radius: 100px;
+    text-align: center;
+    color: white;
+    background-color: #FF0000;
+}
+.example-block__watch-review > img{
+    width: 29px;
+    height: 29px;
+    margin-right: 11px;
 }
 .results{
-
+display: flex;
+margin-bottom: 50px;
 }
 .results__image{
-
+    max-width: 100%;
 }
 .results__list{
-
+    margin-left: 90px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .results__item{
-
+    
+}
+.results__numbers{
+  font-family: 'Euclid Square SemiBold';
+    font-size: 48px;
+    color: #F5F860;
+}
+.results__text{
+    font-family: 'Euclid Square Light';
+    font-size: 20px;
+    color: white;
 }
 .results__link{
-    
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+.results__link > a{
+    color: white;
+    font-family: 'Euclid Square Regular';
+    font-size: 30px;
 }
