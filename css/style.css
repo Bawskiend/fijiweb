@@ -1,5 +1,6 @@
 body{
     background-color: #162950;
+    overflow-x: hidden;
 }
 .wrapper{
     max-width: 1250px;
@@ -293,6 +294,7 @@ margin-bottom: 50px;
     
 }
 .results__numbers{
+    
   font-family: 'Euclid Square SemiBold';
     font-size: 48px;
     color: #F5F860;
@@ -340,6 +342,28 @@ margin-bottom: 50px;
 .form-mobile__submit{
     display: none;
 }
+@media (max-width: 1820px){
+    .title-block__image{
+        left: -200px;
+        
+    }
+    .title-block__gif1{
+        
+        left: 135px;
+    }
+    .title-block__gif2{
+        left: -235px;
+        top: -110px;
+    }
+    .title-block__text{
+        left: -35px;
+    }
+}
+@media (max-width: 1620px){
+    .title-block__image{
+        left: -200px;
+    }
+}
 @media (max-width: 1250px) {
     .title-block{
         display: block;
@@ -364,8 +388,6 @@ margin-bottom: 50px;
     }
     .title-block__image{   
         width: 550px;
-        object-fit: cover;
-        position: absolute;
         left: 25%;
         margin-top: 40px;
     }
@@ -412,6 +434,7 @@ margin-bottom: 50px;
             display: block;
         }
         .results__list{
+            margin-left: 0px;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
