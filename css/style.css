@@ -155,6 +155,12 @@ body{
     top: -75px;
     z-index: -1;
 }
+.title-block__background-image{
+    position: absolute;
+    left: -550px;
+    top: -200px;
+    z-index: -3;
+}
 .title-block__text{
     width: 160px;
     position: absolute;
@@ -329,6 +335,31 @@ margin-bottom: 50px;
 }
 .swiper-button-next{
 
+}
+.get-design{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+}
+.get-design__side{
+    padding-left: 48px;
+    flex-basis: 50%;
+}
+.get-design__text{
+    margin-top:78px;
+    font-family: "Euclid Square Bold";
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+.get-design__text__blue{
+    color: #6091F8;
+}
+.get-design__text__red{
+  font-family: "Euclid Square Regular";
+  
+    color: #FF0000;
 }
 .form-mobile{
     display: none;
