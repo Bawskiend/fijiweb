@@ -1,6 +1,6 @@
 new Swiper('.swiper', {
     loop: 'true',
-    autoHeight:'true',
+    autoHeight:'false',
     effect:'flip',
     flipEffect:{
         slideShadows: true,

@@ -248,6 +248,7 @@ top: 370px;
 .example-block{
     max-width: 100%;
     margin-top: 80px;
+    margin-bottom: 20px;
     /* border-bottom: 1px solid rgba(96, 145, 248, 0.5); */
 }
 .example-block__title{
@@ -326,8 +327,8 @@ margin-bottom: 50px;
 .swiper{
     max-width: 100%;
 }
-.swiper-wrapper{
-
+.swiper-wrapper:last-child{
+    margin-bottom: 20px;
 }
 .swiper-slide{
     max-height: 1470px;
@@ -339,16 +340,25 @@ margin-bottom: 50px;
 
 }
 .get-design{
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     width: 100%;
     background-color: white;
     border-radius: 20px;
 }
 .get-design__side{
+    position: relative;
     padding-left: 48px;
     flex-basis: 50%;
 }
+.get-design__background-image{
+    position: absolute;
+    left: -235px;
+    top: -20px;
+}
 .get-design__text{
+    color: #162950;
     margin-top:78px;
     font-family: "Euclid Square Bold";
     font-size: 40px;
@@ -359,9 +369,54 @@ margin-bottom: 50px;
     color: #6091F8;
 }
 .get-design__text__red{
-  font-family: "Euclid Square Regular";
-  
+    font-family: "Euclid Square Regular";
+    font-size: 30px;
     color: #FF0000;
+    margin-bottom: 29px;
+}
+.get-design__form{
+    max-width: 436px;
+
+}
+.get-design__form-input{
+    font-family: "Euclid Square Regular";
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    height: 64px;
+    margin-bottom: 15px;
+    padding: 22px 23px 22px 23px;
+    border-radius: 100px;
+    border: 1px solid #DBE7FF;
+}
+.get-design__submit{
+    margin-top: 15px;
+    font-family: "Euclid Square Bold";
+    width: 100%;
+    font-size: 18px;
+    background-color: #FF0000;
+    color: white;
+    border-radius: 100px;
+    height: 86px;
+    text-align: center;
+}
+.get-design__form > p{
+    font-family: "Euclid Square Regular";
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.get-design__form-input::placeholder{
+    font-size: 16px;
+    font-family: "Euclid Square Regular";
+
+}
+.get-design__side-blockimage{
+    margin-left: -49px;
+}
+.get-design__side-image{
+    position: absolute;
+    top: 90%;
+    left: -100px;
 }
 .form-mobile{
     display: none;
@@ -705,6 +760,7 @@ margin-bottom: 50px;
     }
     .example-block{
         margin-top: 40px;
+
     }
     .example-block__title{
         font-size: 20px;
