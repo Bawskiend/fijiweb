@@ -1,6 +1,6 @@
 body{
     background-color: #162950;
-    
+    overflow-x: hidden;
 }
 .wrapper{
     max-width: 1250px;
@@ -221,7 +221,13 @@ top: 370px;
     cursor: pointer;
 }
 .subtitle-block{
+    position: relative;
     margin-bottom: 15px;
+}
+.subtitle-block__background-image{
+    position: absolute;
+    top: -200px;
+    left: 900px;
 }
 .subtitle{
     line-height: 1.3;
@@ -307,15 +313,16 @@ margin-bottom: 50px;
     color: #F5F860;
 }
 .results__text{
+    line-height: 1.3;
     font-family: 'Euclid Square Light';
     font-size: 20px;
     color: white;
 }
 .results__link{
-    border-bottom: 2px solid white;
     padding-bottom: 5px;
 }
 .results__link > a{
+    border-bottom: 2px solid white;
     word-wrap: none;
     color: white;
     font-family: 'Euclid Square Regular';
@@ -326,6 +333,10 @@ margin-bottom: 50px;
 }
 .swiper{
     max-width: 100%;
+    
+}
+.swiper__background-image{
+
 }
 .swiper-wrapper:last-child{
     margin-bottom: 20px;
@@ -337,7 +348,7 @@ margin-bottom: 50px;
     
 }
 .swiper-button-next{
-
+    margin-right: 14px;
 }
 .get-design{
     margin-top: 40px;
@@ -358,6 +369,7 @@ margin-bottom: 50px;
     top: -20px;
 }
 .get-design__text{
+    line-height: 1.3;
     color: #162950;
     margin-top:78px;
     font-family: "Euclid Square Bold";
@@ -393,7 +405,7 @@ margin-bottom: 50px;
     margin-top: 15px;
     font-family: "Euclid Square Bold";
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     background-color: #FF0000;
     color: white;
     border-radius: 100px;
@@ -459,6 +471,11 @@ margin-bottom: 50px;
     }
     .title-block__gif1{
 
+    }
+    .get-design__background-image{
+        left: -29%;
+        width: 161.2%;
+        top: 10%;
     }
     .wrapper{
         padding: 0 15px;
@@ -535,6 +552,8 @@ margin-bottom: 50px;
             align-items: center;
         }
         .results__link > a{
+            padding-bottom: 5px;
+            border-bottom: 2px solid white;
             word-wrap: none;
             color: white;
             font-family: 'Euclid Square Regular';
@@ -546,6 +565,9 @@ margin-bottom: 50px;
 @media (min-width: 992px) and (max-width: 1199px) {
     .title-block{
         display: block;
+    }
+    .subtitle-block__background-image{
+    display: none;
     }
 }
 
@@ -596,6 +618,9 @@ margin-bottom: 50px;
     }
     .header__side:last-child{
         display: none;
+    }
+    .results__link > a{
+        border-bottom: 1px white;
     }
 }
 
