@@ -300,6 +300,9 @@ top: 370px;
 display: flex;
 margin-bottom: 50px;
 }
+.results__link__mobile{
+    display: none;
+}
 .results__image{
     max-width: 1228px;
     
@@ -655,8 +658,12 @@ margin-bottom: 50px;
     .subtitle-block__background-image{
     display: none;
     }
+    
 }
 @media(max-width:1070px){
+    .form-mobile__number{
+        margin-left: 40px;
+    }
     .get-design__laptop{
         display: none;
     }
@@ -695,7 +702,7 @@ margin-bottom: 50px;
     .get-design__side{
         position: relative;
         text-align: center;
-        padding: 0px 20px 0px;
+        padding: 20px 20px 0px;
         
     }
     .get-design__text{
@@ -711,6 +718,9 @@ margin-bottom: 50px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .form-mobile__submit:hover{
+        background-color: #d31616;
+    }
     .menu-mobile{
         display: block;
     }
@@ -758,18 +768,45 @@ margin-bottom: 50px;
         display: none;
     }
     .results__link > a{
-        border-bottom: 1px white;
+        border-bottom: 1px solid white;
+    }
+    .results__link:hover > a{
+        border-bottom: none;
+
     }
 }
 
 @media (max-width: 767px) {
+    .title-block__right-side{
+        margin-bottom: -150px;
+    }
+    .results__link{
+        display: none;
+    }
+    .results__link__mobile{
+        text-align: center;
+        margin: 15px 0 25px 0;
+        display: block;
+    } 
+    .results__link__mobile > a{
+        color: white;
+        font-family: "Euclid Square Regular";
+        font-size: 40px;
+        border-bottom: 1px solid white;
+        line-height: 1.4;
+
+    }
+    .results__link__mobile:hover > a{
+        border-bottom: none;
+    }
     .menu-mobile{
         display: block;
     }
     .callback-mobile{
         display: block;
     }
-    .title-block__image{   
+    .title-block__image{ 
+        margin-bottom: -40px;  
         width: 450px;
         object-fit: cover;
         position: absolute;
@@ -779,15 +816,15 @@ margin-bottom: 50px;
     .title-block__text{
         width: 160px;
         position: absolute;
-        left: 250px;
-        top: 500px;
+        left: 125px;
+        top: 370px;
         font-family: 'Euclid Square Light';
         font-size: 14px;
         color: white;
     }
     .form-mobile{
         max-width: 100%;
-        margin: 0 auto 20px auto;
+        margin: 0 auto 40px auto;
     }
     .title__text{
         font-size: 48px;
@@ -815,6 +852,109 @@ margin-bottom: 50px;
     }
     .header__side:last-child{
         display: none;
+    }
+}
+@media (max-width: 610px){
+    .title__city{
+        line-height: 2;
+    }
+    .title-block__image{
+        left: 15%;
+    }
+    .title__text{
+    font-size: 40px;        
+    }
+    .example-block__title{
+        text-align: center;
+    }
+    .results__numbers{
+        font-size: 40px;
+    }
+    .form-mobile{
+        display: block;
+        margin-bottom: 120px;
+    }
+    .form-mobile__number{
+        margin: 0 auto;
+        padding: 22px 19px;
+        width: 90%;
+    }
+    .form-mobile__submit{
+        margin: 20px auto;
+        padding: 28px 19px;
+        width: 90%;
+
+    }
+    .subtitle-block{
+        margin-bottom: -20px;
+    }
+}
+@media (max-width:530px){
+    .get-design__text{
+        font-size: 24px;
+    }
+    .get-design__text__red{
+        font-size: 20px;
+    }
+    .title-block__image{
+        width: 400px;
+    }
+    .swiper-button-next{
+        top: 620px;
+    }
+    .swiper-button-prev{
+        top: 620px;
+    }
+    .title__city{
+        font-size: 20px;
+        padding: 0px 8px 2px;
+    }
+    .title__text{
+        font-size: 32px;
+
+    }
+    .title-block__image{
+        left: 0%;
+    }
+    .subtitle{
+        font-size: 32px;
+    }
+    .subtitle__yellow-text{
+        font-size: 32px;
+
+    }
+    .subtitle__text{
+        font-size: 24px;
+    }
+    .example-block__title{
+        font-size: 26px;
+    }
+    .results__numbers{
+        font-size: 30px;
+    }
+    .results__text{
+        font-size: 20px;
+
+    }
+    .title-block__list-item{
+        font-size: 24px;
+    }
+}
+@media(max-width:420px){
+    .title__text{
+        font-size: 26px;
+    }
+    .get-design__text{
+        font-size: 24px;
+    }
+    .title-block__image{
+        width: 100%;
+    }
+    .results__link__mobile > a{
+        font-size: 28px;
+    }
+    .get-design__text__red{
+        font-size: 20px;
     }
 }
 @media (max-width: 320px) {
